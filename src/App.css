@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -25,7 +26,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 15px 30px; /* Increased horizontal padding */
+  padding: 10px 20px; /* Reduced vertical padding */
   background: rgba(224, 229, 236, 0.8);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -47,7 +48,7 @@ header nav a { /* Logo link */
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
-  margin-right: 20px; /* Add some margin to the right of the logo */
+  margin-right: 15px; /* Reduced margin to the right of the logo */
   flex-shrink: 0; /* Prevent logo from shrinking */
 }
 
@@ -66,21 +67,21 @@ header nav ul { /* Main navigation links */
 }
 
 header nav li {
-  margin: 0 15px;
+  margin: 0 10px; /* Reduced margin for nav links */
 }
 
 .language-switcher {
   display: flex;
-  gap: 8px;
+  gap: 5px; /* Reduced gap for language buttons */
   flex-shrink: 0; /* Prevent shrinking */
-  margin-left: 20px; /* Add margin to separate from main nav */
+  margin-left: 15px; /* Reduced margin to separate from main nav */
 }
 
 .language-switcher button {
   background-color: #e0e5ec;
   border: none;
   border-radius: 10px;
-  padding: 8px 12px;
+  padding: 6px 10px; /* Reduced padding for language buttons */
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #333;
@@ -90,6 +91,7 @@ header nav li {
   white-space: nowrap; /* Prevent text from wrapping */
   min-width: fit-content; /* Ensure minimum width for buttons based on content */
   text-align: center;
+  font-size: 0.85rem; /* Slightly smaller font size for buttons */
 }
 
 .language-switcher button:hover {
@@ -176,6 +178,7 @@ section h2 {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  z-index: 2001;
 }
 
 .product-modal button {
@@ -205,12 +208,12 @@ footer {
 /* Mobile styles */
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 150px; /* Increased padding for mobile header */
+    scroll-padding-top: 100px; /* Adjusted padding for mobile header */
   }
 
   header {
     flex-direction: column; /* Stack items vertically */
-    padding: 15px 20px; /* Adjust padding for mobile */
+    padding: 10px 15px; /* Reduced padding for mobile */
     align-items: flex-start; /* Align items to the start */
   }
 
@@ -222,7 +225,7 @@ footer {
 
   header nav a { /* Logo link */
     margin-right: 0; /* Remove right margin */
-    margin-bottom: 10px; /* Add bottom margin */
+    margin-bottom: 5px; /* Reduced bottom margin */
   }
 
   header nav ul {
@@ -233,27 +236,33 @@ footer {
   }
 
   header nav li {
-    margin: 5px 0; /* Adjust margin for stacked links */
+    margin: 3px 0; /* Reduced margin for stacked links */
   }
 
   .language-switcher {
     margin-left: 0; /* Remove auto margin */
-    margin-top: 10px; /* Add top margin to separate from main nav */
+    margin-top: 5px; /* Reduced top margin to separate from main nav */
     width: 100%; /* Take full width */
     justify-content: center; /* Center buttons */
   }
 
   .language-switcher button {
     flex-grow: 1; /* Allow buttons to grow and fill space */
+    font-size: 0.8rem; /* Further reduced font size for buttons */
+    padding: 5px 8px; /* Further reduced padding for buttons */
   }
 
   #hero {
-    padding-top: 180px; /* Adjust padding to push content below the expanded mobile header */
+    padding-top: 120px; /* Adjusted padding to push content below the expanded mobile header */
   }
 
   .product-modal {
-    max-width: 90%; /* Adjust max-width for smaller screens */
-    padding: 20px; /* Adjust padding for smaller screens */
+    max-width: 95%; /* Increased max-width for smaller screens */
+    padding: 15px; /* Reduced padding for smaller screens */
+    top: 50px; /* Position from top */
+    transform: translateX(-50%); /* Only horizontal centering */
+    max-height: calc(100vh - 100px); /* Ensure modal fits and is scrollable */
+    z-index: 2001; /* Ensure it's above the header */
   }
 
   .product-modal img {
@@ -262,11 +271,11 @@ footer {
   }
 
   .product-modal h2 {
-    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    font-size: 1.6rem; /* Adjusted font size for smaller screens */
   }
 
   .product-modal p {
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    font-size: 0.85rem; /* Adjusted font size for smaller screens */
   }
 
   .product-modal table {
