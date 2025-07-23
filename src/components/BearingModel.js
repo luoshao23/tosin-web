@@ -84,7 +84,7 @@ const BearingModel = () => {
       <pointLight position={[-5, -5, -5]} intensity={1.0} />
       <pointLight position={[0, 5, -5]} intensity={0.5} />
       <Bearing />
-      <OrbitControls enableZoom={false} enablePan={true} autoRotate autoRotateSpeed={0.5} />
+      <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} autoRotate autoRotateSpeed={0.5} />
     </Canvas>
   );
 };
