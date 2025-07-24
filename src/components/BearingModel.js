@@ -83,7 +83,7 @@ const BearingModel = ({ heroTitle, heroSubtitle }) => {
           textAlign: 'center',
         }}
         >
-          <h1>{heroTitle}</h1>
+          <h1 style={{fontSize: '2em'}}>{heroTitle}</h1>
             <p>{heroSubtitle}</p>
         </div>
       </Html>
