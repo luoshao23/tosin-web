@@ -6,10 +6,8 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="hero">
-      <h1>{t('heroTitle')}</h1>
-      <p>{t('heroSubtitle')}</p>
-      <BearingModel />
+    <section id="hero" className="hero-section">
+      <BearingModel heroTitle={t('heroTitle')} heroSubtitle={t('heroSubtitle')} />
     </section>
   );
 };
